@@ -13,6 +13,12 @@ enter_folder_and_print_inside_exit(){
     cd ..
 }
 
+loop_folders(){
+    for dir in */; do
+        enter_folder_and_print_inside_exit $dir
+    done
+}
+
 
 echo "Thanks for using me!"
 
@@ -20,6 +26,8 @@ echo "Let me update the repositories"
 
 cd ..
 
-for dir in */; do
-  enter_folder_and_print_inside_exit $dir
-done
+loop_folders
+
+echo "All repositories updated"
+
+echo "Have a nice coding :)"
