@@ -4,6 +4,7 @@ This repository helps you having all the repositories updated with git. It moves
 
 ## Future plans
 
+* [ ] Check folder is git repository
 * [ ] Make it update all git repositories no matter where they are
 * [ ] Update all banches
 
