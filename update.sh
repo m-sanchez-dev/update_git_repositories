@@ -13,8 +13,11 @@ enter_folder_and_print_inside_exit(){
         base_name=$(basename `git rev-parse --show-toplevel`)
         echo "Updating repository $base_name"
         update_repository
+    else
+        folder_name=${PWD##*/}
+        echo "$folder_name is not a Git Repository"
     fi
-    
+
     cd ..
 }
 
