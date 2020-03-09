@@ -7,9 +7,14 @@ update_repository(){
 
 enter_folder_and_print_inside_exit(){
     cd $1
-    base_name=$(basename `git rev-parse --show-toplevel`)
-    echo "Updating repository $base_name"
-    update_repository
+
+    # Check folder is git repository
+    if [ -d .git ]; then
+        base_name=$(basename `git rev-parse --show-toplevel`)
+        echo "Updating repository $base_name"
+        update_repository
+    fi
+    
     cd ..
 }
 
