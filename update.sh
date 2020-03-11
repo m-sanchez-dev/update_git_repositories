@@ -10,7 +10,7 @@ enter_folder_and_print_inside_exit(){
 
     # Check folder is git repository
     if [ -d .git ]; then
-        base_name=$(basename `git rev-parse --show-toplevel`)
+        base_name=$(basename $(git rev-parse --show-toplevel))
         echo "Updating repository $base_name"
         update_repository
     else
