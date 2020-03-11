@@ -6,7 +6,7 @@ update_repository(){
 }
 
 enter_folder_and_print_inside_exit(){
-    cd $1
+    cd "$1" || exit
 
     # Check folder is git repository
     if [ -d .git ]; then
