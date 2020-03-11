@@ -23,7 +23,7 @@ enter_folder_and_print_inside_exit(){
 
 loop_folders(){
     for dir in */; do
-        enter_folder_and_print_inside_exit $dir
+        enter_folder_and_print_inside_exit "$dir"
     done
 }
 
