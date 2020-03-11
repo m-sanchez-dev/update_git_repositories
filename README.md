@@ -5,7 +5,7 @@ This repository helps you having all the repositories updated with git. It moves
 ## Future plans
 
 * [x] Check folder is git repository
-* [ ] Add funcy text
+* [x] Add funcy text
 * [ ] Make it update all git repositories no matter where they are
 * [ ] Update all branches
 
