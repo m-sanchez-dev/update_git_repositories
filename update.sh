@@ -6,7 +6,11 @@ update_repository(){
 }
 
 enter_folder_and_print_inside_exit(){
+    # Enter folder with git
     cd "$1" || exit
+    
+    # Go up one level, because we are on .git
+    cd ..
     
     # Check folder is git repository
     if [ -d .git ]; then
@@ -17,12 +21,11 @@ enter_folder_and_print_inside_exit(){
         folder_name=${PWD##*/}
         echo "$folder_name is not a Git Repository"
     fi
-    
-    cd ..
 }
 
 loop_folders(){
-    for dir in */; do
+    for dir in $(find ~ -name ".git")
+    do
         enter_folder_and_print_inside_exit "$dir"
     done
 }
@@ -49,7 +52,7 @@ show_message
 
 echo "Thanks for using me!"
 
-echo "Let me update the repositories"
+echo "Let me update the repositories for you"
 
 cd ..
 
