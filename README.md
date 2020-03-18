@@ -7,7 +7,6 @@ This repository helps you having all the repositories updated with git. It moves
 * [x] Check folder is git repository
 * [x] Add funcy text
 * [ ] Make it update all git repositories no matter where they are
-* [ ] Update all branches
 
 ## Licence
 
