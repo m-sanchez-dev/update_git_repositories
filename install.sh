@@ -13,8 +13,14 @@ repository_folder=$(pwd)
 printf "The script is being installed in: $repository_folder\n"
 
 # Save alias
-printf "Setting alias"
-# alias git-update="$repository_folder/update.sh"
+printf "Remove alias if exists\n"
+awk '!/alias git-update/' ~/.bashrc > temp && mv temp ~/.bashrc
+awk '!/alias git-update/' ~/.zshrc > temp && mv temp ~/.zshrc
+
+printf "Save git-update alias\n"
+echo "alias git-update='$repository_folder/update.sh'" >> ~/.bashrc
+echo "alias git-update='$repository_folder/update.sh'" >> ~/.zshrc
+
 
 printf "Installation completed!\n\n"
 printf "You can use the command by typing git-update in the terminal\n"
