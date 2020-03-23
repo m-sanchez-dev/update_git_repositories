@@ -33,11 +33,7 @@ Have fun coding.
 
 ## Future plans
 
-* [x] Check folder is git repository
-* [x] Add funcy text
-* [x] Make it update all git repositories no matter where they are
-* [x] Fix fragile loop
-* [x] Make auto-update repository
+* [ ] Restart after update, see issue [#4](https://github.com/sWallyx/update_git_repositories/issues/4)
 
 ## Licence
 
