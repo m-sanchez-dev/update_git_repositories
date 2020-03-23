@@ -39,4 +39,4 @@ Have fun coding.
 
 ## Licence
 
-MIT - Licence
+[MIT](LICENSE) - License
