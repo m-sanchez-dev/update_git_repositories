@@ -34,6 +34,8 @@ Have fun coding.
 ## Future plans
 
 * [ ] Restart after update, see issue [#4](https://github.com/sWallyx/update_git_repositories/issues/4)
+* [ ] Investigate if cd can just be removed [#5](https://github.com/sWallyx/update_git_repositories/issues/5)
+* [ ] Move functions out of `update.sh` [#6](https://github.com/sWallyx/update_git_repositories/issues/6)
 
 ## Licence
 
