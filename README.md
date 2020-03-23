@@ -7,7 +7,8 @@ This repository helps you having all the repositories updated with git. It moves
 * [x] Check folder is git repository
 * [x] Add funcy text
 * [x] Make it update all git repositories no matter where they are
-* [ ] Fix fragile loop
+* [x] Fix fragile loop
+* [ ] Make auto-update repository
 
 ## Licence
 
