@@ -24,7 +24,7 @@ enter_folder_and_print_inside_exit(){
 }
 
 loop_folders(){
-    for dir in $(find ~ -name ".git")
+    for dir in $(find ~ -name ".git" 2>&1 | grep -v "Operation not permitted")
     do
         enter_folder_and_print_inside_exit "$dir"
     done
