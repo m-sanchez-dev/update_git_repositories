@@ -31,7 +31,7 @@ After making the installation write on the terminal `git-update` and you will se
 
 Have fun coding.
 
-## Future plans
+## TODO's
 
 * [ ] Restart after update, see issue [#4](https://github.com/sWallyx/update_git_repositories/issues/4)
 * [ ] Investigate if cd can just be removed [#5](https://github.com/sWallyx/update_git_repositories/issues/5)
