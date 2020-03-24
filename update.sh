@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Main file calling all functions needed
 
 clear
 
@@ -20,10 +21,6 @@ source "$SCRIPT_DIRECTORY"/functions-misc.sh
 
 show_message
 
-echo "Thanks for using me!"
-
-echo "Let me update the repositories for you"
-
 move_to_script_folder
 
 update_via_git_master
@@ -35,8 +32,6 @@ cd ..
 
 loop_folders
 
-echo "All repositories updated"
-
-echo "Have a nice coding :)"
+bye_message
 
 unset USER_PWD

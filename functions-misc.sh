@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
+# Misc functions file
 
 show_message(){
+    # Shows the welcome message
     
     echo "
 
@@ -14,11 +16,19 @@ show_message(){
 
     "
     
+    echo "Thanks for using me!"
+
+    echo "Let me update the repositories for you"
 }
 
 
 
 enter_folder_and_print_inside_exit(){
+    # Enters the given folder and prints the
+    # repository name.
+    # When inside calls for the update_repository
+    # function.
+
     # Enter folder with git
     cd "$1" || exit
     
@@ -34,4 +44,13 @@ enter_folder_and_print_inside_exit(){
         folder_name=${PWD##*/}
         echo "$folder_name is not a Git Repository"
     fi
+}
+
+bye_message(){
+    # Shows the message at the end of the command
+    # when everything has been done
+
+    echo "All repositories updated"
+
+    echo "Have a nice coding :)"
 }
