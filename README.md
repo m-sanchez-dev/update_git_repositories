@@ -4,26 +4,23 @@ This repository helps you having all the repositories updated with git. It searc
 
 ## How to install
 
-To install the script / command follow the steps:
+Follow this two steps to install the command:
 
 Clone the repository
 ``` bash
 git clone https://github.com/sWallyx/update_git_repositories.git
 ```
 
-Enter the folder and make `install.sh` executable
-``` bash
-chmod +x install.sh
-```
-
-Run the install script
+Run the install script*
 ``` bash
 ./install.sh
 ```
 
-Done! You will have the command available* on the terminal.
+Done! You will have the command available** on the terminal.
 
-_*NOTE: You might need to restart the terminal_
+_* On some cases you may need to make it executable first `chmod +x install.sh`_
+
+_** You might need to restart the terminal_
 
 ## Usage
 
