@@ -4,13 +4,19 @@ clear
 
 # Save user location
 USER_PWD=$(pwd)
+export USER_PWD
 
 # Get script directory
 SCRIPT_DIRECTORY="${0%/*}"
 
-source $SCRIPT_DIRECTORY/functions-folders.sh
-source $SCRIPT_DIRECTORY/functions-git.sh
-source $SCRIPT_DIRECTORY/functions-misc.sh
+# shellcheck source=/dev/null
+source "$SCRIPT_DIRECTORY"/functions-folders.sh
+
+# shellcheck source=/dev/null
+source "$SCRIPT_DIRECTORY"/functions-git.sh
+
+# shellcheck source=/dev/null
+source "$SCRIPT_DIRECTORY"/functions-misc.sh
 
 show_message
 
@@ -32,3 +38,5 @@ loop_folders
 echo "All repositories updated"
 
 echo "Have a nice coding :)"
+
+unset USER_PWD
