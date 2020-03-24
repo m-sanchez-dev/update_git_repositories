@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Functions that have something to do with git
 
 update_via_git_master(){
     # Check script is last version of master
@@ -11,5 +12,10 @@ update_via_git_master(){
     fi
     git fetch
 
+    git pull
+}
+
+update_repository(){
+    git fetch
     git pull
 }

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Installation script for the command
 
 printf "Let me install the script for you, it will only be one second\n"
 
