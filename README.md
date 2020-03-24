@@ -35,8 +35,9 @@ Have fun coding.
 
 * [ ] Restart after update, see issue [#4](https://github.com/sWallyx/update_git_repositories/issues/4)
 * [ ] Investigate if cd can just be removed [#5](https://github.com/sWallyx/update_git_repositories/issues/5)
-* [ ] Move functions out of `update.sh` [#6](https://github.com/sWallyx/update_git_repositories/issues/6)
+* [x] Move functions out of `update.sh` [#6](https://github.com/sWallyx/update_git_repositories/issues/6)
 * [ ] `error: unknown option "show-current"` message while running [#7](https://github.com/sWallyx/update_git_repositories/issues/8)
+* [ ] Remove repository if check [#10](https://github.com/sWallyx/update_git_repositories/issues/10)
 
 ## Licence
 
