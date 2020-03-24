@@ -20,7 +20,7 @@ echo "Let me update the repositories for you"
 
 move_to_script_folder
 
-#update_via_git_master
+update_via_git_master
 
 move_back_user_location
 
