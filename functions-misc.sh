@@ -20,7 +20,7 @@ show_message(){
 
     printf "Let me update the repositories for you\n"
 
-    printf "- - - - - - - - - - - - - - -\n\n"
+    printf " - - - - - - - - - - - - - - - \n\n"
 }
 
 
@@ -52,7 +52,7 @@ bye_message(){
     # Shows the message at the end of the command
     # when everything has been done
 
-    printf "\n\n- - - - - - - - - - - - - - -"
+    printf "\n\n - - - - - - - - - - - - - - - "
 
     printf "\nAll repositories updated\n"
 
