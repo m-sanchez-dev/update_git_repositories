@@ -16,9 +16,11 @@ show_message(){
 
     "
     
-    echo "Thanks for using me!"
+    printf "Thanks for using me!\n"
 
-    echo "Let me update the repositories for you"
+    printf "Let me update the repositories for you\n"
+
+    printf "- - - - - - - - - - - - - - -\n\n"
 }
 
 
@@ -50,7 +52,9 @@ bye_message(){
     # Shows the message at the end of the command
     # when everything has been done
 
-    echo "All repositories updated"
+    printf "\n\n- - - - - - - - - - - - - - -"
 
-    echo "Have a nice coding :)"
+    printf "\nAll repositories updated\n"
+
+    printf "Have a nice coding :)\n\n"
 }
