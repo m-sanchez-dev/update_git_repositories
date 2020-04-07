@@ -14,6 +14,11 @@ move_back_user_location(){
 }
 
 loop_folders(){
+
+    printf "\nFinding repositories to update, give me a sec . . . \n"
+
+    # Find inside the user folder the directories called ".git" this means, the
+    # directory is a git repository
     for dir in $(find ~ -name ".git" -type d 2>&1 | grep -v "Operation not permitted")
     do
         enter_folder_and_print_inside_exit "$dir"
