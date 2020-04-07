@@ -27,9 +27,6 @@ update_via_git_master
 
 move_back_user_location
 
-# TODO: Is this still needed?
-cd ..
-
 loop_folders
 
 bye_message
