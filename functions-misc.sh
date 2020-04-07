@@ -38,21 +38,16 @@ enter_folder_and_print_inside_exit(){
     cd ..
     
     # Check folder is git repository
-    if [ -d .git ]; then
-        base_name=$(basename "$(git rev-parse --show-toplevel)")
-        echo "Updating repository $base_name"
-        update_repository
-    else
-        folder_name=${PWD##*/}
-        echo "$folder_name is not a Git Repository"
-    fi
+    base_name=$(basename "$(git rev-parse --show-toplevel)")
+    echo "Updating repository $base_name"
+    update_repository
 }
 
 bye_message(){
     # Shows the message at the end of the command
     # when everything has been done
 
-    printf "\n\n - - - - - - - - - - - - - - - "
+    printf "\n - - - - - - - - - - - - - - - "
 
     printf "\nAll repositories updated\n"
 
