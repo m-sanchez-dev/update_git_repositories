@@ -19,9 +19,8 @@ loop_folders(){
 
     # Find inside the user folder the directories called ".git" this means, the
     # directory is a git repository
-    for dir in $(find ~ -name ".git" -type d 2>&1 | grep -v "Operation not permitted")
-    do
-        enter_folder_and_print_inside_exit "$dir"
+    find ~ -name ".git" -type d 2>&1 | grep -v "Operation not permitted" | while read -r line; do  
+        enter_folder_and_print_inside_exit "$line"
         printf "\n"
     done
 }
