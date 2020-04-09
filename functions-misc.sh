@@ -4,19 +4,8 @@
 show_message(){
     # Shows the welcome message
     
-    echo "
-
- _    _  ___   ____        _______ ______    _____ _____ _______
-| |  | |  __ \|  __ \   /\|__   __|  ____|  / ____|_   _|__   __|
-| |  | | |__) | |  | | /  \  | |  | |__    | |  __  | |    | |
-| |  | |  ___/| |  | |/ /\ \ | |  |  __|   | | |_ | | |    | |
-| |__| | |    | |__| / ____ \| |  | |____  | |__| |_| |_   | |
- \____/|_|    |_____/_/    \_\_|  |______|  \_____|_____|  |_|
-                                                     by: sWallyx
-
-    "
-    
-    printf "Thanks for using me!\n"
+    figlet "UPDATE GIT"
+    printf "by: sWallyx\n\n"
 
     printf "Let me update the repositories for you\n"
 
