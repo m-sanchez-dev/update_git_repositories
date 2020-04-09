@@ -4,8 +4,9 @@
 install_mac_os(){
 
     # Check for brew
-    which -s brew
-    if [[ $? != 0 ]] ; then
+    
+    if ! brew -v
+    then
         printf ">> Installing Homebrew\n"
         ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     else
@@ -42,7 +43,7 @@ chmod +x update.sh
 
 # Get repository path
 repository_folder=$(pwd)
-printf "The script is being installed in: $repository_folder\n"
+printf "The script is being installed in: %s\n" "$repository_folder"
 
 # Save alias
 printf ">> Checking for old alias\n"
