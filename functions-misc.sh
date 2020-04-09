@@ -3,8 +3,6 @@
 
 show_message(){
     # Shows the welcome message
-
-    echo ""
     
     figlet "UPDATE GIT"
     printf "by: sWallyx\n\n"
