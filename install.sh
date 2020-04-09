@@ -5,7 +5,7 @@ install_mac_os(){
 
     # Check for brew
     
-    if ! brew -v
+    if ! brew -v &> /dev/null
     then
         printf ">> Installing Homebrew\n"
         ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
