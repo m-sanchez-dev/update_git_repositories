@@ -1,6 +1,6 @@
 # Update git repositories
 
-This repository helps you having all the repositories updated with git. It search all the folder that have `.git` folder and updates the repository. The folder that are being checked are the ones on the user folder. Repositories outside the user one will not be updated.
+This repository helps you having all the repositories updated with git. It search all the folder that have `.git` folder and updates the repository. The folder that are being checked are the ones on the user folder. Repositories outside the user one will not be updated. Works on Linux and MacOs systems, need to try it on Windows.
 
 ## How to install
 
