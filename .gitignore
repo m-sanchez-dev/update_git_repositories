@@ -1,2 +1,5 @@
 # Ignore visual code folder
 .vscode
+
+# Temporal file created on installation
+temp
