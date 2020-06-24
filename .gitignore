@@ -1,3 +1,5 @@
+# File for all ignored files
+
 # Ignore visual code folder
 .vscode
 
